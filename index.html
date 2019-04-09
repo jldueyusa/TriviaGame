@@ -5,34 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  </head>
 <body>
-    <div id="start">Start Quiz!</div>
-    <div id="quiz" style="display : none;">
-<div id="qImage"><img src="img.png"></div>
-<div id="question"> <p>Question</p></div>
-<div id="timer">
-<div id="counter">6</div>
-<div id="btimeGauge"></div>
-<div id="timeGauge"></div>
-</div>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Trivia Game</title>
+            <style>
+                #result {
+                    background: rgb(255,255,254);
+                    border: 2px dotted gold;
+                    font-size: 24px;
+                    height: 60px;
+                    margin-top: 10px;
+                }
+            </style>
+        </head>
+        <body>
+    
+            <body>
+                <div class="quizContainer">
+                     <h1>Where did these common phrases come from?</h1>
+                     <h2>You will be given a phrase commonly used in daily English<br>
+                        Select the choice that you think best fits it's origin<br>
 
-<div id="choices">
-<div class="choice" id="A" onclick = "checkAnswer('A')">A</div>
-<div class="choice" id="B" onclick = "checkAnswer('B')">B</div>
-<div class="choice" id="C" onclick = "checkAnswer('C')">C</div>
-</div>
+                     </h2>
 
+            
+                    <div class="question"></div>
+                    <ul class="choiceList"></ul>
+                    <div class="quizMessage"></div>
+                    <div class="result"></div>
+                    <div class="nextButton">Next Question</div>
+                    <br>
+                </div>
+            </body>
+        </body>
+    </html>
+<script src="assets/javascript/app.js"></script>
 
-<div id="progress">
-    <div class="prog"></div>
-</div>
-    </div>
-<div id="scoreContainer" style="display: none;">
-<img src="smile.png"><p>50%</p>
-</div>
-<script src="app.js"></script>
 </body>
 </html>  
