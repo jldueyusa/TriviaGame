@@ -11,15 +11,17 @@ h2 {
 }
 ul {
   list-style: none;
+  list-style-position: outside;
 }
 li {
   
   font-size: 2em;
+ 
 }
 input[type=radio] {
   border: 0px;
-  width: 20px;
-  height: 1em;
+  margin: 20px;
+
 }
 
 
@@ -59,19 +61,19 @@ input[type=radio] {
 }
 .quizMessage {
   background-color: burlywood;
-  border-radius: 6px;
+  border-radius: 2px;
   width: 30%;
-  margin: 5% 35% ;
+  margin: 1% 35% ;
   text-align: center;
-  padding: 2px;
+  
   color:black;
 }
 .choiceList {
   text: bold;
   color: white;
-  text-align: left;
+  text-align: justify;
   font-size: 11px ;
-  margin: 20px;
+  
   padding: 0% 10%;
 }
 .result {
@@ -79,7 +81,24 @@ input[type=radio] {
   height: auto;
   border-radius: 6px;
   background-color: linen;
-  margin: 5% 35%;
+  margin: 2% 35%;
   text-align: center;
  
+}
+
+#imagePlace1,
+#imagePlace2,
+#imagePlace3,
+#imagePlace4, 
+#imagePlace5 {
+display: none;
+height: 200px;
+width: 200px;
+margin: 2% 44%;
+}
+
+#counter{
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
 }

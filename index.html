@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    
+    <style>
+        #result {
+            background: rgb(255, 255, 254);
+            border: 2px dotted gold;
+            font-size: 24px;
+            height: 60px;
+            margin-top: 10px;
+        }
+    </style>
     <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+</head>
+
 <body>
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Trivia Game</title>
-            <style>
-                #result {
-                    background: rgb(255,255,254);
-                    border: 2px dotted gold;
-                    font-size: 24px;
-                    height: 60px;
-                    margin-top: 10px;
-                }
-            </style>
-        </head>
-        <body>
     
-            <body>
-                <div class="quizContainer">
-                     <h1>Where did these common phrases come from?</h1>
-                     <h2>You will be given a phrase commonly used in daily English<br>
-                        Select the choice that you think best fits it's origin<br>
+    <div class="quizContainer">
+        <h1>Where did these common phrases come from?</h1>
+        <h2>You will be given a phrase commonly used in daily English<br>
+            Select the choice that you think best fits it's origin<br>
 
-                     </h2>
+        </h2>
+        <div id="counter"></div>
 
-            
-                    <div class="question"></div>
-                    <ul class="choiceList"></ul>
-                    <div class="quizMessage"></div>
-                    <div class="result"></div>
-                    <div class="nextButton">Next Question</div>
-                    <br>
-                </div>
-            </body>
-        </body>
-    </html>
-<script src="assets/javascript/app.js"></script>
+        <div class="question"></div>
+        <ul class="choiceList"></ul>
+        <div class="quizMessage"></div>
+        
+        <div class="result"></div>
+        
+        <img id="imagePlace1" src="assets/images/biteTheBullet.PNG" />
+        <img id="imagePlace2" src="assets/images/redHand.PNG" />
+        <img id="imagePlace3" src="assets/images/coldShoulder.PNG" />
+        <img id="imagePlace4" src="assets/images/the9yards.PNG" />   
+        <img id="imagePlace5" src="assets/images/sticks.PNG" />
+        <div class="nextButton">Next Question</div>
+        <br>
+    </div>
+    
+    
+   
+
+    <script src="assets/javascript/app.js"></script>
 
 </body>
-</html>  
+
+</html>
